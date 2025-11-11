@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte y Diseño Digital | Blog Creativo</title>
+    <style>
+        /* ======= ESTILOS GENERALES ======= */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
 
+        a {
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        a:hover {
+            color: #005999;
+        }
+
+        /* ======= CABECERA ======= */
+        header {
+            background: linear-gradient(120deg, #1e1f22, #3c3f45);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 25px;
+            font-style: italic;
+            color: #cccccc;
+        }
+
+        .btn-about {
+            background: #0077cc;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-about:hover {
+            background: #005fa3;
+        }
+
+        /* ======= NAVEGACIÓN ======= */
+        nav {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            padding: 15px 25px;
+            color: #f4f4f4;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #0077cc;
+        }
+
+        /* ======= CONTENIDO PRINCIPAL ======= */
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .post {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post h2 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .post p {
+            text-align: justify;
+        }
+
+        /* ======= PIE DE PÁGINA ======= */
+        footer {
+            text-align: center;
+            background: #1e1f22;
+            color: #ccc;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ccc;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* ======= RESPONSIVE ======= */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .btn-about {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <h1>Arte y Diseño Digital</h1>
+        <p>Explorando las técnicas, estilos y herramientas del arte contemporáneo</p>
+        <!-- Botón que lleva a about.html -->
+        <a href="about.html">
+            <button class="btn-about">Conoce más sobre este blog</button>
+        </a>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Técnicas</a>
+        <a href="#">Tutoriales</a>
+        <a href="#">Galería</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <article class="post">
+            <h2>La fusión del arte tradicional y digital</h2>
+            <img src="https://images.unsplash.com/photo-1527694224012-be005121c774?auto=format&fit=crop&w=1000&q=80" alt="Arte digital abstracto">
+            <p>
+                El arte digital permite combinar la creatividad tradicional con las herramientas tecnológicas más innovadoras. 
+                Desde la pintura digital hasta la escultura 3D, los artistas exploran nuevas formas de expresión visual.
+            </p>
+            <a href="#">Leer más →</a>
+        </article>
+
+        <article class="post">
+            <h2>Técnicas populares en el diseño digital</h2>
+            <img src="https://images.unsplash.com/photo-1581091215367-59ab6c7c9b41?auto=format&fit=crop&w=1000&q=80" alt="Diseño gráfico moderno">
+            <p>
+                Entre las técnicas más utilizadas se encuentran el fotomontaje, la ilustración vectorial, el modelado 3D y la animación digital. 
+                Cada una ofrece posibilidades únicas para crear obras originales e impactantes.
+            </p>
+            <a href="#">Leer más →</a>
+        </article>
+
+        <article class="post">
+            <h2>Herramientas esenciales para artistas digitales</h2>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Herramientas digitales de arte">
+            <p>
+                Programas como Adobe Photoshop, Procreate, Blender y Krita son aliados fundamentales para los creadores digitales. 
+                Su dominio permite desarrollar estilos personales y explorar nuevas dimensiones artísticas.
+            </p>
+            <a href="#">Leer más →</a>
+        </article>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2025 Arte y Diseño Digital — Creado con pasión por el arte y la creatividad. <br>
+        <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a></p>
+    </footer>
+
+</body>
+</html>
